@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: azure;
+    font-family: monospace;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: aquamarine;
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px lightgray;
+}
+
+button {
+    border: none;
+    background-color:coral;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    max-width: 200px;
+}
+
+#save-btn {
+    background-color:mediumpurple;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+span {
+    font-weight: 500;
+    font-size: large;
+}
+
+p {
+    font-style: italic;
+    max-width: 200px;
+}
