@@ -22,10 +22,13 @@ button {
     background-color: goldenrod;
     width: 150px;
     border: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     letter-spacing: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3px;
 }
 
 button:hover {
