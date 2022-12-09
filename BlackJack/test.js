@@ -1,9 +1,14 @@
-let countries = ['Bolivia', 'Ecuador', 'Venezuela', 'Peru', 'Chile']
+let fruits = ['apple', 'orange', 'apple', 'apple', 'orange']
+apples = ""
+oranges = ""
 
-countries.unshift('Argentina', 'Uruguay')
-countries.push('Colombia', 'Brazil')
-countries.pop();
-countries.shift();
-console.log(countries.length)
+fruits.forEach(element => {
+    if (element === 'apple') {
+        apples += element + ' '
+    } else {
+        oranges += element + ' '
+    }
+})
 
-console.log(countries)
+console.log(apples)
+console.log(oranges)
