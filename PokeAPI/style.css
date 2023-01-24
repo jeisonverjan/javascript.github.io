@@ -1,0 +1,137 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark: hsl(229, 23%, 23%);
+    --dark-gray: hsl(227, 10%, 46%);
+    --basic-white: rgb(255, 255, 255);
+    --light-gray: rgba(211, 211, 211, 0.523);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10 px */
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--basic-white);
+    border-radius: 1rem;
+    max-width: 320px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 0px #a4ecfade;
+}
+
+.card-header-img {
+    width: 100%;
+}
+
+.card-boddy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.card-boddy-img {
+    border: 5px solid var(--basic-white);
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: calc(-48px - 5px);
+    background-color: var(--basic-white);
+    box-shadow: 5px 5px 50px 5px #a4ecfade;
+}
+
+.card-boddy-title {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.card-boddy-title span {
+    color: var(--dark-gray);
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
+.card-boddy p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.card-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-footer-social h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-footer-social p{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--dark-gray);
+}
+
+form {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+form * {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+form input {
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--dark-cyan);
+}
+
+form button i {
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+form button i:hover {
+    opacity: 0.6;
+}

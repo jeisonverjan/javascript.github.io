@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"  href="./images/favicon-32x32.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemos Card</title>
+</head>
+<body>
+    <main class="container" id="container">
+    </main>
+    <template id="template">
+        <article id="card" class="card">
+            <img src="./images/bg-pattern-card.svg" alt="" class="card-header-img">
+            <div class="card-boddy">
+                <img src="./images/image-victor.jpg" alt="" class="card-boddy-img">
+                <h1 id="name" class="card-boddy-title">Victor charst<span id="hp">26</span></h1>
+                <p id="exp">London</p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <h2 id="attack">80K</h2>
+                    <P>Attack</P>
+                </div>
+                <div class="card-footer-social">
+                    <h2 id="special-attack">803K</h2>
+                    <P>Special Attack</P>
+                </div>
+                <div class="card-footer-social">
+                    <h2 id="defense">1.4K</h2>
+                    <P>Defense</P>
+                </div>
+            </div>
+            <form id="form" action="" class="search">
+                <input type="text" id="myInput" placeholder="Search by ID">
+                <button type="button" class="myButton"><i class="fa-brands fa-searchengin myButton"></i></button>
+            </form>
+        </article>
+    </template>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/5b3e85825e.js" crossorigin="anonymous"></script>
+</body>
+</html>

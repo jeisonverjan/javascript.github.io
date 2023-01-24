@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites Extension</title>
+    <link rel="stylesheet" href="statics/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form-el">
+            <input class="lead-input" type="text" id="lead-input" autofocus>
+            <i class="fa-solid fa-plus add-lead-input" role="button"></i>
+        </form>
+        <div id="leads-list">
+
+        </div>
+    </div>
+    <template id="leads-template">
+        <div class="favorites">
+            <div class="lead">
+                <input class="url-input" type="text" autofocus disabled >
+                <i class="fa-solid fa-pen edit-btn" role="button"></i>
+                <i class="fa-solid fa-minus delete-btn" role="button"></i>
+            </div>
+        </div>        
+    </template>
+    <script src="https://kit.fontawesome.com/5b3e85825e.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
